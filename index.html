@@ -3,104 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test for class">
-    <title>Meilleur (ou Pire) site au monde(🌍) </title>
+    <title>Your Name - Resume</title>
     <style>
-        /* Basic styles for layout */
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #4CAF50;
+            background: #333;
             color: white;
-            padding: 20px;
+            padding: 10px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         .container {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-        .feature {
-            width: 30%;
-            background-color: #fff;
+            width: 80%;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #333;
+            font-size: 1.8em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .resume-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .resume-list li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
         footer {
+            text-align: center;
+            padding: 10px 0;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
+            position: fixed;
             width: 100%;
-        }
-        h1, h2 {
-            margin: 0;
-        }
-        .cta-button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-        }
-        .cta-button:hover {
-            background-color: #45a049;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to Our Service</h1>
-        <p>hello world \n I'am at ENSG Today
-              test utf8 à€éçαβß大
-        </p>
+        <h1>Your Name</h1>
+        <p>Your Profession or Title</p>
     </header>
 
-    <!-- Main Content Section -->
     <div class="container">
-        <h2>Why Choose Us?</h2>
-        <p>We don't know why someone want taht.</p>
+        <!-- About Me Section -->
+        <section class="section" id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate [Your Profession]. I specialize in [Your Skills]. I have [X years] of experience working with [Technologies/Industries]. I'm always looking for new opportunities to grow and collaborate with talented people.</p>
+        </section>
 
-        <!-- Features -->
-        <div class="features">
-            <div class="feature">
-                <h3>Feature 1</h3>
-                <p>Low quality feature and no product</p>
-            </div>
-            <div class="feature">
-                <h3>Feature 2</h3>
-                <p>We have no brain</p>
-            </div>
-            <div class="feature">
-                <h3>Feature 3</h3>
-                <p>migth work if happy</p>
-            </div>
-        </div>
-
-        <!-- Call to Action Button -->
-        <a href="#signup" class="cta-button">Get Started Now</a>
+        <!-- Resume Section -->
+        <section class="section" id="resume">
+            <h2>Resume</h2>
+            <ul class="resume-list">
+                <li><strong>Current Position:</strong> [Your Current Job Title] at [Company Name]</li>
+                <li><strong>Previous Experience:</strong> [Briefly List Prior Jobs]</li>
+                <li><strong>Education:</strong> [Degree, School Name, Graduation Year]</li>
+                <li><strong>Skills:</strong> [Skill 1, Skill 2, Skill 3, etc.]</li>
+                <li><strong>Certifications:</strong> [Certification 1, Certification 2]</li>
+            </ul>
+        </section>
     </div>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 SomeOne SomeWhere. All Rights Reserved.</p>
+        <p>Contact me at: [Your Email]</p>
     </footer>
 
 </body>
